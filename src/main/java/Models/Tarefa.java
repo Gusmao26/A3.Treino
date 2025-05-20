@@ -40,5 +40,4 @@ public class Tarefa {
     @ManyToOne
     @JoinColumn(name = "id_responsavel")
     private Usuario responsavel;
-
 }
