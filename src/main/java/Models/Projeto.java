@@ -24,4 +24,5 @@ public class Projeto {
         this.dataInicio = dataInicio;
         this.dataPrevistaFim = dataPrevistaFim;
     }
+
 }
