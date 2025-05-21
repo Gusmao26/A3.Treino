@@ -1,0 +1,29 @@
+@startuml
+ class Usuario {
+  - id: int
+  - nome: String
+  - email: String
+  - senha: String
+ }
+
+ class Projeto {
+  - id: int
+  - nome: String
+  - descricao: String
+  - dataInicio: LocalDate
+  - dataPrevistaFim: LocalDate
+ }
+
+class Tarefa {
+  - id: int
+  - nome: String
+  - descricao: String
+  - prioridade: String
+  - dataVencimento: LocalDate
+  - status: String
+  - dataConclusao: LocalDate
+ }
+
+ Usuario "1" -- "0..*" Tarefa : Responsável
+ Projeto "1" -- "0..*" Tarefa : Contém
+@enduml
